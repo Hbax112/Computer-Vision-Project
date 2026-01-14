@@ -37,7 +37,7 @@ class FocusGuardian:
         self.suspect_start_time = None
         self.SUSPECT_DELAY = 3.5  
 
-        self.camera_index = 1
+        self.camera_index = 0
         self.backend = cv2.CAP_DSHOW
 
 
@@ -151,7 +151,7 @@ class FocusGuardian:
             cv2.FONT_HERSHEY_SIMPLEX,
             0.75,
             (255, 255, 255),
-            2,
+            2, 
         )
 
     def run(self):
